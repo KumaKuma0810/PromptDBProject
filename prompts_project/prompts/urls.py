@@ -3,5 +3,5 @@ from .views import *
 
 urlpatterns = [
         path('prompts', PromptListCreateView.as_view(), name='prompt-list'),
-        path('prompts/<int:pk>', PromptRetrieveUpdateDestroyView.as_view(), name='prompt_detail'),
+        path('prompts/<int:pk>', PromptDetailView.as_view(), name='prompt_detail'),
 ]
